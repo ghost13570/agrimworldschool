@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(183, 235, 255);
+        }
+        .container{
+            background-color: white;
+            height: 1000px;
+        }
+        .heading{
+            color: white;
+            background-color: navy;
+            height: 40px;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        .text{
+            margin-left: 15px;
+        }
+       .right{
+           margin-left: 100px;
+       }
+       .left{
+           margin-left: 150px;
+       }
+       .buton{
+           text-align: center;
+       }
+      .btn{
+          color: white;
+          background-color: navy;
+      }
+      .btn:hover{
+          color: black;
+          background-color: yellow;
+      }
+      #v1{
+          color: red;
+         
+      }
+     #v2{
+          color: red;
+       
+     }
+     #v3{
+          color:red;
+     }
+     #v4{
+         color: red;
+     }
+     #v5{
+         color: red;
+     }
+     #v6{
+         color: red;
+     }
+     #v7{
+         color: red;
+     }
+     #v8{
+         color: red;
+     }
+     #v9{
+         color: red;
+     }
+     #v10{
+         color: red;
+     }
+     #v11{
+         color: red;
+     }
+     #v12{
+         color: red;
+     }
+     .buton{
+         text-align: center;
+     }
+     .buton1{
+         background-color: navy;
+         color: white;
+     }
+     .agrim{
+         font-size: 30px;
+     }
+     .nav1{
+  width: 100%;
+  height: 145px;
+  background-color: rgb(0, 255, 221);
+ 
+}
+
+.coco{
+  font-size: 30px;
+}
+.logo1{
+  margin-top: 3px;
+}
+    </style>
+</head>
+<body>
+    <script>
+        function plswork()
+        {
+            if(document.form.fname.value=="")
+            {
+                document.getElementById("v1").innerHTML="Please enter First Name";
+                document.form.fname.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v1").innerHTML="";
+            }
+            if(document.form.lname.value=="")
+            {
+                document.getElementById("v2").innerHTML="Please enter Last Name";
+                document.form.lname.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v2").innerHTML="";
+            }
+            if(document.form.dob.value=="")
+            {
+                document.getElementById("v3").innerHTML="Please enter Date of Birth";
+                document.form.dob.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v3").innerHTML="";
+            }
+            if(document.form.mail.value=="")
+            {
+                document.getElementById("v4").innerHTML="please enter proper email address";
+                document.form0.email.focus();
+                return false;
+            }
+            var emailID=form.mail.value;
+            var checkat=emailID.indexOf("@")
+            var checkdot=emailID.lastIndexOf(".")
+            if(checkat<1 || (checkdot-checkat < 2))
+            {
+                document.getElementById("v4").innerHTML="please enter proper email address";
+                document.form.mail.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v4").innerHTML="";
+            }
+            
+            if(document.form.father.value=="")
+            {
+                document.getElementById("v5").innerHTML="Please enter Father's name";
+                document.form.father.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v5").innerHTML="";
+            }
+            if(document.form.mother.value==""){
+                document.getElementById("v6").innerHTML="Please enter Mother's name";
+                document.form.mother.focus();
+                return false;
+            }
+            else{
+                document.getElementById("v6").innerHTML="";
+            }
+            var num=document.form.mobno.value;
+           if(num=="")
+				{
+					document.getElementById("v7").innerHTML="Please enter mobile no.";
+					document.form.mobno.focus();
+					return false;
+				} 
+				else if(num.length != 10 || isNaN(num))
+				{
+					document.getElementById("v7").innerHTML="Please enter valid mobile no.";
+					document.form.mobno.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("v7").innerHTML="";
+                }
+                 var num=document.form.mobno.value;
+           if(num=="")
+				{
+					document.getElementById("v7").innerHTML="Please enter mobile no.";
+					document.form.mobno.focus();
+					return false;
+				} 
+				else if(num.length != 10 || isNaN(num))
+				{
+					document.getElementById("v7").innerHTML="Please enter valid mobile no.";
+					document.form.mobno.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("v7").innerHTML="";
+                }
+                if(document.form.add.value=="")
+                {
+                    document.getElementById("v8").innerHTML="Please enter address";
+                    document.form.add.focus();
+                    return false;
+                }
+                else{
+                    document.getElementById("v8").innerHTML="";
+                }
+                if(document.form.city.value=="")
+                {
+                    document.getElementById("v9").innerHTML="Please enter city's name";
+                    document.form.city.focus();
+                    return false;
+                }
+                else{
+                    document.getElementById("v9").innerHTML="";
+                }
+                if(document.form.state.value=="")
+                {
+                    document.getElementById("v10").innerHTML="Please enter state's name";
+                    document.form.state.focus();
+                    return false;
+                }
+                else{
+                    document.getElementById("v10").innerHTML="";
+                }
+                var pinc=document.form.pin.value
+                if(document.form.pin.value=="")
+                {
+                    document.getElementById("v11").innerHTML="Please enter pincode";
+                    document.form.pin.focus();
+                    return false;
+                }
+                else if(pinc.length != 6 || isNaN(num))
+                {
+                    document.getElementById("v11").innerHTML="Please enter Proper Pincode";
+                    document.form.pin.focus();
+                    return false;
+                }
+                else{
+                    document.getElementById("v11").innerHTML="";
+                }
+                if(document.form.county.value=="")
+                {
+                    document.getElementById("v12").innerHTML="Please enter country";
+                    document.form.county.focus();
+                    return false;
+                }
+                else{
+                    document.getElementById("v12").innerHTML="";
+                }
+        }
+    </script>
+
+<div class="container">
+    <br>
+    <div class="nav1"><center>
+        <IMG src="logedit.jpeg" height="125px" width="125px" class="logo">
+         <img src="Screenshot (121).png" class="logo1">
+        </center>
+         
+         </div>
+    <div class="heading"><div class="text">Student Information</div></div>
+    <form action="" method="POST" name="form" onsubmit ="return(plswork());">
+        <center>
+        <table>
+            <tr>
+                <td>Student's First Name : <input type="text" id="fname"></td>
+                <td id="v1" class="vv1"></td>
+            </tr>
+            <tr>
+                    <td><br>Student's Last Name : <input type="text" id="lname"></td>
+                    <td id="v2" ></td>
+            </tr>
+            <tr>
+                <td><br>Academic Year : <select  name="country" >
+                    <option     value="">--Select Academic Year--</option>
+                     <option    value="IND"> 2022-23</option>
+                     <option    value="America"> 2021-22</option>
+                     
+                </select></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><br>Class in Which Admission is Sought :
+                    <select  name="country" >
+                        <option     value="">--Select Class--</option>
+                         <option    value="">BEGINNERS</option>
+                         <option    value="">K1 </option>
+                         <option    value="">K2</option>
+                         <option    value="">I </option>
+                         <option    value="">II </option>
+                         <option    value="">III </option>
+                         <option    value="">IV </option>
+                         <option    value="">V </option>
+                         <option    value="">VI </option>
+                         <option    value="">VII </option>
+                         <option    value="">VIII </option>
+                         <option    value="">IX </option>
+                         <option    value="">X </option>
+                         <option    value="">XI </option>
+                         <option    value="">XII </option>
+                         
+                    </select></td>
+                    <td></td>
+            </tr>
+            <tr>
+                <td><br>Student's DOB : <input type="date" id="dob"></td>
+                <td id="v3"></td>
+            </tr>
+            <tr>
+                <td><br>Email ID : <input type="text" id="mail"></td>
+                <td id="v4"></td>
+            </tr>
+            <tr>
+                <td><br>Father's Name : <input type="text" id="father"></td>
+                <td id="v5"></td>
+            </tr>
+            <tr>
+                <td><br>Mother's Name : <input type="text" id="mother"></td>
+                <td id="v6"></td>
+            </tr>
+            <tr>
+                <td><br>Mobile No : <input type="text" id="mobno"></td>
+                <td id="v7"></td>
+            </tr>
+            <tr>
+                <td><br>Gender :   <select  name="country" >
+                    <option     value="">--Select Gender--</option>
+                     <option    value="">Male</option>
+                     <option    value="">Female</option>
+                     </select></td>
+                     <td>
+
+                     </td>
+            </tr>
+            <tr>
+                <td><br>Address : <input type="text" id="add"></td>
+                <td id="v8"></td>
+            </tr>
+            <tr>
+                <td><br>City : <input type="text" id="city"></td>
+                <td id="v9"></td>
+            </tr>
+            <tr>
+                <td><br>State: <input type="text" id="state"></td>
+                <td id="v10"></td>
+            </tr>
+            <tr>
+                <td><br>Pincode : <input type="text" id="pin"></td>
+                <td id="v11"></td>
+            </tr>
+            <tr>
+                <td><br>Country : <input type="text" id="county"></td>
+                <td id="v12"></td>
+            </tr>
+        </table>
+   </center>
+   </form><br>
+
+        <div class="buton"><input type="button" value="Submit" onclick="plswork()" class="buton1"></div>
+</div>
+</body>
+</html>

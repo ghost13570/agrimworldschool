@@ -1,0 +1,59 @@
+ <form action="" method="POST" name="form" onsubmit ="return(buynow());">
+   
+                <div class="left"></div>
+           
+            
+            
+                <div class="right"></div>
+            
+    
+                <div class="left"></div>
+            <BR>
+                <div class="right">
+          <br>
+                <div class="left"></div>
+            
+            <br>
+                <div class="right"></div>
+           <br>
+                <div class="left"></div>
+           <br>
+                <div class="right"></div>
+            
+        <br>
+                <div class="left"></div>
+            <br>
+                <div class="right"></div>
+           <br>
+               <div class="left"> Gender :   <select  name="country" >
+                    <option     value="">--Select Gender--</option>
+                     <option    value="">Male</option>
+                     <option    value="">Female</option>
+                     </select></div>
+            <br>
+                <div class="right"></div>
+            <br>
+                <div class="left"></div>
+           
+           <br>
+                <div class="right"></div>
+            
+       
+            <td><br>
+                <div class="left"></div>
+            </td>
+            <td><br>
+                <div class="right"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><br>
+                <div class="left">Remarks : <input type="text" id="remarks"></div>
+            </td>
+            <td><br>
+                <div class="right">How did you come to know ? <input type="text" id="howdy"></div>
+            </td>
+        </tr>
+        
+    </table>
+    </form>
